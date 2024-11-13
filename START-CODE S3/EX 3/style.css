@@ -1,0 +1,126 @@
+/* Apply global styles */
+body {
+    font-family: "Sono", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container for pricing plans */
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Individual pricing plan styles */
+  .pricing-plan {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for the plan */
+  .pricing-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Plan title */
+  .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Plan price */
+  .plan-price {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Plan features list */
+  .plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .plan-features li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .plan-features li:first-child {
+    color: #007bff;
+  }
+  
+  .plan-features li:last-child {
+    color: #f44336;
+  }
+  
+  /* Plan button */
+  .plan-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .pricing-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-plan {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pricing-plan {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .plan-title {
+      font-size: 20px;
+    }
+  
+    .plan-price {
+      font-size: 18px;
+    }
+  
+    .plan-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
